@@ -28,7 +28,7 @@ function setKeys(keyValue) {
   } else if (keyValue == "c") {
     onScreenNum = "";
     screen.value = onScreenNum;
-  } else if (keyValue == "=") {
+  } else if (keyValue == "=" || keyValue == "Enter") {
     onScreenNum = eval(onScreenNum); //default fn in Js to evaluate a string
     screen.value = ((onScreenNum - Math.floor(onScreenNum)) !== 0) ? onScreenNum.toFixed(2) : onScreenNum;
   } else if (keyValue == "←") {
